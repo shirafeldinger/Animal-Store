@@ -3,11 +3,25 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className=" navbar d-flex w-100 align-items-center justify-content-around">
-      <Link to="#">Home</Link>
-      <Link to="#">Log In</Link>
-      <Link to="#">Shopping Cart</Link>
-      <Link to="#">Contact Us</Link>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <Link className="navbar-brand" to="#">
+        Navbar
+      </Link>
+
+      <div className="navbar-nav">
+        <Link className="nav-item nav-link" to="#">
+          Home
+        </Link>
+        <Link className="nav-item nav-link" to="#">
+          Log In
+        </Link>
+        <Link className="nav-item nav-link" to="#">
+          Shopping Cart
+        </Link>
+        <Link className="nav-item nav-link " to="#">
+          Contact Us
+        </Link>
+      </div>
     </nav>
   );
 }
