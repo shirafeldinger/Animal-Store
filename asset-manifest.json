@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/animal-store/static/css/main.5f361e03.chunk.css",
+    "main.js": "/animal-store/static/js/main.1c5f504f.chunk.js",
+    "main.js.map": "/animal-store/static/js/main.1c5f504f.chunk.js.map",
+    "runtime-main.js": "/animal-store/static/js/runtime-main.817dde36.js",
+    "runtime-main.js.map": "/animal-store/static/js/runtime-main.817dde36.js.map",
+    "static/js/2.0f53ff7a.chunk.js": "/animal-store/static/js/2.0f53ff7a.chunk.js",
+    "static/js/2.0f53ff7a.chunk.js.map": "/animal-store/static/js/2.0f53ff7a.chunk.js.map",
+    "index.html": "/animal-store/index.html",
+    "precache-manifest.7470f0d568082e3d059cad281120fc0a.js": "/animal-store/precache-manifest.7470f0d568082e3d059cad281120fc0a.js",
+    "service-worker.js": "/animal-store/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/animal-store/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.0f53ff7a.chunk.js.LICENSE.txt": "/animal-store/static/js/2.0f53ff7a.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/animal-store/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.817dde36.js",
+    "static/js/2.0f53ff7a.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.1c5f504f.chunk.js"
+  ]
+}
