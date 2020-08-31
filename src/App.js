@@ -5,6 +5,7 @@ import Navbar from "./Layouts/Navbar";
 import Search from "./Layouts/Search";
 import Users from "./Components/Users";
 import User from "./Components/User";
+import Deals from "./Components/Deals";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [photos, setPhotos] = useState([]);
   const [userNumber, setUserNumber] = useState("");
+
+  const [deals, setDeals] = useState([]);
 
   useEffect(() => {
     fetch(baseUrl + "/users")
@@ -35,6 +38,17 @@ function App() {
 
     return () => {};
   }, []);
+
+  useEffect(() => {
+    fetch("https://www.cheapshark.com/api/1.0/deals")
+      .then((response) => response.json())
+      .then((json) => {
+        setDeals(json);
+      });
+
+    return () => {};
+  }, []);
+
   return (
     <div className="App">
       <Router>
@@ -55,6 +69,11 @@ function App() {
             component={() => (
               <User photos={photos} userNumber={userNumber} todos={todos} />
             )}
+          />
+          <Route
+            exact
+            path="/deals"
+            component={() => <Deals deals={deals} />}
           />
         </Switch>{" "}
       </Router>
