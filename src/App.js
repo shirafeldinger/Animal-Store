@@ -3,7 +3,7 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Layouts/Navbar";
 import Search from "./Layouts/Search";
-import data from "./data/groo-pets-dummy-data.json";
+import { products } from "./data/database";
 import Products from "./Components/Products";
 import "./App.css";
 import Product from "./Components/Product";
@@ -14,12 +14,12 @@ function App() {
         <Navbar />
         <Search />
         <Switch>
-          <Route exact path="/" component={() => <Products data={data} />} />
           <Route
             exact
-            path="/products/category/:name"
-            component={() => <Products />}
+            path="/"
+            component={() => <Products products={products} />}
           />
+          <Route exact path="/:category" component={() => <Products />} />
           <Route
             exact
             path="/:id"

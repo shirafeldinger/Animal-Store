@@ -14,6 +14,7 @@ export default function ProductBlock({ product }) {
         {/* <div
     dangerouslySetInnerHTML={{ __html: `${product.description}` }}
   /> */}
+        <div className="">categorys: {product.categorys}</div>
         <img
           style={{ maxHeight: "250px", maxWidth: "250px" }}
           src={`https://cdn.groo.co.il/_media/media/${product.media_cat_id}/${product.media_id}.jpg`}
