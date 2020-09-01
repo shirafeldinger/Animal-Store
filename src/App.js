@@ -16,13 +16,17 @@ function App() {
         <Switch>
           <Route
             exact
-            path="/"
+            path="/products"
             component={() => <Products products={products} />}
           />
-          <Route exact path="/:category" component={() => <Products />} />
+          {/* <Route
+            exact
+            path="/products/:category"
+            render={({ match }) => <Product match={match} />}
+          /> */}
           <Route
             exact
-            path="/:id"
+            path="/products/:id"
             render={({ match }) => <Product match={match} />}
           />
         </Switch>{" "}

@@ -13,9 +13,6 @@ export default function Product(props) {
       <h6 style={{ direction: "rtl" }} className="text-center">
         {product.title}
       </h6>
-      {/* <div
-dangerouslySetInnerHTML={{ __html: `${product.description}` }}
-/> */}
       <img
         style={{ maxHeight: "250px", maxWidth: "250px" }}
         src={`https://cdn.groo.co.il/_media/media/${product.media_cat_id}/${product.media_id}.jpg`}
