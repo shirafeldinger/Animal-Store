@@ -8,31 +8,39 @@ import Products from "./Components/Products";
 import "./App.css";
 import Product from "./Components/Product";
 import Categorys from "./Components/Categorys";
+import AnimalList from "./Layouts/AnimalList";
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
         <Search />
-        <Switch>
-          <Route
-            exact
-            path="/products"
-            component={() => <Products products={someProducts} />}
-          />{" "}
-          <Route
-            exact
-            path="/category/:name"
-            render={({ match }) => (
-              <Categorys match={match} products={someProducts} />
-            )}
-          />
-          <Route
-            exact
-            path="/products/:id"
-            render={({ match }) => <Product match={match} />}
-          />
-        </Switch>{" "}
+        <div className="row">
+          <div className="col-md-1">
+            <AnimalList />
+          </div>
+          <div className="col-md-11">
+            <Switch>
+              <Route
+                exact
+                path="/products"
+                component={() => <Products products={someProducts} />}
+              />{" "}
+              <Route
+                exact
+                path="/category/:name"
+                render={({ match }) => (
+                  <Categorys match={match} products={someProducts} />
+                )}
+              />
+              <Route
+                exact
+                path="/products/:id"
+                render={({ match }) => <Product match={match} />}
+              />
+            </Switch>
+          </div>
+        </div>
       </Router>
     </div>
   );
