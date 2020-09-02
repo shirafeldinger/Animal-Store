@@ -3,10 +3,11 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Layouts/Navbar";
 import Search from "./Layouts/Search";
-import { products } from "./data/database";
+import { someProducts } from "./data/database";
 import Products from "./Components/Products";
 import "./App.css";
 import Product from "./Components/Product";
+import Categorys from "./Components/Categorys";
 function App() {
   return (
     <div className="App">
@@ -17,13 +18,15 @@ function App() {
           <Route
             exact
             path="/products"
-            component={() => <Products products={products} />}
-          />
-          {/* <Route
+            component={() => <Products products={someProducts} />}
+          />{" "}
+          <Route
             exact
-            path="/products/:category"
-            render={({ match }) => <Product match={match} />}
-          /> */}
+            path="/category/:name"
+            render={({ match }) => (
+              <Categorys match={match} products={someProducts} />
+            )}
+          />
           <Route
             exact
             path="/products/:id"

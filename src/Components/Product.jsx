@@ -5,6 +5,7 @@ export default function Product(props) {
   const product = getProductById(productId);
   return (
     <div
+      style={{ height: "100%" }}
       className=" d-flex
         flex-column
         justify-content-center
@@ -18,7 +19,7 @@ export default function Product(props) {
         src={`https://cdn.groo.co.il/_media/media/${product.media_cat_id}/${product.media_id}.jpg`}
         alt="img"
       />
-      <div className="">{product.price}</div>
+      <div className="">{product.price}₪</div>
     </div>
   );
 }
