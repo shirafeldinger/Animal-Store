@@ -8,7 +8,7 @@ export default function Product(props) {
       className=" d-flex
         flex-column
         justify-content-center
-        align-items-center card"
+        align-items-center card product"
     >
       <h6 style={{ direction: "rtl" }} className="text-center">
         {product.title.replace("[MIN_PRICE]", product.price)}
@@ -24,12 +24,12 @@ export default function Product(props) {
         ₪{product.price}
       </div>
       <img
-        style={{ maxHeight: "250px", maxWidth: "250px" }}
+        style={{ maxHeight: "300px", maxWidth: "300px" }}
         src={`https://cdn.groo.co.il/_media/media/${product.media_cat_id}/${product.media_id}.jpg`}
         alt="img"
       />
       <button
-        className="btn btn-danger"
+        className="btn btn-danger m-3"
         onClick={() => {
           props.handleProductSelected(product);
         }}

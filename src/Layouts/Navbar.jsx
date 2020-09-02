@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="navbar d-flex justify-content-center align-items-center">
+    <nav className="navbar d-flex justify-content-center align-items-center main-navbar">
       <Link className="nav-item nav-link nav-btn" to="#">
         צור קשר
       </Link>
