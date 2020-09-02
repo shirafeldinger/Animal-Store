@@ -7,7 +7,7 @@ export default function Navbar() {
       <Link className="nav-item nav-link nav-btn" to="#">
         צור קשר
       </Link>
-      <Link className="nav-item nav-link nav-btn" to="#">
+      <Link className="nav-item nav-link nav-btn" to="/register">
         התחבר
       </Link>
       <Link className="nav-item nav-link nav-btn" to="/cart">

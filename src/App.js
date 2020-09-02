@@ -12,6 +12,7 @@ import "./App.css";
 import Product from "./Components/Product";
 import Categorys from "./Components/Categorys";
 import Cart from "./Components/Cart";
+import Register from "./Components/Register";
 
 function App() {
   const [productSelected, setProductSelected] = useState([]);
@@ -57,6 +58,7 @@ function App() {
                 path="/cart"
                 component={() => <Cart productSelected={productSelected} />}
               />{" "}
+              <Route exact path="/register" component={() => <Register />} />{" "}
             </Switch>
           </div>
         </div>

@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Cart({ productSelected }) {
-  console.log(productSelected);
   const renderTableData = () => {
     return productSelected.map((product) => (
       <tr key={product.id}>
