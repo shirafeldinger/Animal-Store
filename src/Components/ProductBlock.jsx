@@ -21,7 +21,7 @@ export default function ProductBlock({ product }) {
         src={`https://cdn.groo.co.il/_media/media/${product.media_cat_id}/${product.media_id}.jpg`}
         alt="img"
       />
-      <div className="">{product.price}₪</div>
+      <h5 style={{ color: "#fc6f38", fontWeight: "700" }}>{product.price}₪</h5>
     </div>
   );
 }
