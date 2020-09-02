@@ -9,27 +9,27 @@ export default function AnimalList() {
         כלבים
         <div className="dropdown-content">
           {" "}
-          <Link>אוכל</Link>
-          <Link>צעצועים</Link>
-          <Link>חומרי הדברה</Link>
+          <Link to="#">אוכל</Link>
+          <Link to="#">צעצועים</Link>
+          <Link to="#">חומרי הדברה</Link>
         </div>
       </Link>
       <Link className="nav-link dropdown" to="#">
         חתולים
         <div className="dropdown-content">
           {" "}
-          <Link>אוכל</Link>
-          <Link>צעצועים</Link>
-          <Link>חומרי הדברה</Link>
+          <Link to="#">אוכל</Link>
+          <Link to="#">צעצועים</Link>
+          <Link to="#">חומרי הדברה</Link>
         </div>
       </Link>
       <Link className="nav-link dropdown" to="#">
         תוכים
         <div className="dropdown-content">
           {" "}
-          <Link>אוכל</Link>
-          <Link>צעצועים</Link>
-          <Link>חומרי הדברה</Link>
+          <Link to="#">אוכל</Link>
+          <Link to="#">צעצועים</Link>
+          <Link to="#">חומרי הדברה</Link>
         </div>
       </Link>
     </div>

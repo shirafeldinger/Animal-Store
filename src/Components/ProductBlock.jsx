@@ -17,11 +17,13 @@ export default function ProductBlock({ product }) {
       </Link>
 
       <img
-        style={{ maxHeight: "250px", maxWidth: "250px" }}
+        style={{ maxHeight: "200px", maxWidth: "200px" }}
         src={`https://cdn.groo.co.il/_media/media/${product.media_cat_id}/${product.media_id}.jpg`}
         alt="img"
       />
-      <h5 style={{ color: "#fc6f38", fontWeight: "700" }}>{product.price}₪</h5>
+      <h5 style={{ color: "#fc6f38", fontWeight: "700", margin: "15px" }}>
+        ₪{product.price}
+      </h5>
     </div>
   );
 }

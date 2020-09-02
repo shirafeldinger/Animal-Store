@@ -18,13 +18,24 @@ export default function Product(props) {
         className=" text-center d-flex  align-items-center "
         dangerouslySetInnerHTML={{ __html: product.description }}
       ></div> */}
-
+      <div
+        style={{ fontWeight: "700", fontSize: "2.5714em", color: "#fc6f38" }}
+      >
+        ₪{product.price}
+      </div>
       <img
         style={{ maxHeight: "250px", maxWidth: "250px" }}
         src={`https://cdn.groo.co.il/_media/media/${product.media_cat_id}/${product.media_id}.jpg`}
         alt="img"
       />
-      <div className="">{product.price}₪</div>
+      <button
+        className="btn btn-danger"
+        onClick={() => {
+          props.handleProductSelected(product);
+        }}
+      >
+        הוסף לסל
+      </button>
     </div>
   );
 }

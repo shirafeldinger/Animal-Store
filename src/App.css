@@ -51,6 +51,7 @@ h6:hover {
 
 .nav-btn {
   color: black;
+  border-left: 2px solid black;
 }
 
 .nav-btn:hover {
