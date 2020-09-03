@@ -12,7 +12,7 @@ export default function Cart({ productSelected }) {
             alt="img"
           />
         </td>
-        <td style={{ direction: "rtl" }}>{product.title}</td>
+        <td>{product.title}</td>
       </tr>
     ));
   };

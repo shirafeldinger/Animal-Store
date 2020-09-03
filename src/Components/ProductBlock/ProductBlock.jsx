@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Title from "./Title";
+import Price from "./Price";
 
 export default function ProductBlock({ product }) {
   return (
@@ -8,11 +10,9 @@ export default function ProductBlock({ product }) {
       className="d-flex flex-column justify-content-center align-items-center p-2 col-sm-12 col-md-3 card m-1 "
     >
       <Link to={`/products/${product.id}`}>
-        <h6 style={{ direction: "rtl" }} className="text-center">
-          {product.title.replace("[MIN_PRICE]", product.price)}
-        </h6>{" "}
+        <Title>{product.title.replace("[MIN_PRICE]", product.price)}</Title>{" "}
       </Link>
-      <Link style={{ direction: "rtl" }} to={`/category/${product.category}`}>
+      <Link to={`/category/${product.category}`}>
         קטגוריה: {product.category}
       </Link>
 
@@ -21,9 +21,7 @@ export default function ProductBlock({ product }) {
         src={`https://cdn.groo.co.il/_media/media/${product.media_cat_id}/${product.media_id}.jpg`}
         alt="img"
       />
-      <h5 style={{ color: "#fc6f38", fontWeight: "700", margin: "15px" }}>
-        ₪{product.price}
-      </h5>
+      <Price>₪{product.price}</Price>
     </div>
   );
 }

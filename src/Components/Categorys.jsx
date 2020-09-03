@@ -1,5 +1,5 @@
 import React from "react";
-import ProductBlock from "./ProductBlock";
+import ProductBlock from "./ProductBlock/ProductBlock";
 export default function Categorys({ products, match }) {
   const category = match.params.name;
   return (

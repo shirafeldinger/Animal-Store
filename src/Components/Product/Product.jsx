@@ -1,28 +1,19 @@
 import React from "react";
-import { getProductById } from "../data/database";
+import { getProductById } from "../../data/database";
+import Title from "../ProductBlock/Title";
+import Price from "../ProductBlock/Price";
+import ProductWrapper from "./ProductWrapper";
 export default function Product(props) {
   const productId = props.match.params.id;
   const product = getProductById(productId);
   return (
-    <div
-      className=" d-flex
-        flex-column
-        justify-content-center
-        align-items-center card product"
-    >
-      <h6 style={{ direction: "rtl" }} className="text-center">
+    <ProductWrapper className="card">
+      <Title className="">
         {product.title.replace("[MIN_PRICE]", product.price)}
-      </h6>
+      </Title>
 
-      {/* <div
-        className=" text-center d-flex  align-items-center "
-        dangerouslySetInnerHTML={{ __html: product.description }}
-      ></div> */}
-      <div
-        style={{ fontWeight: "700", fontSize: "2.5714em", color: "#fc6f38" }}
-      >
-        ₪{product.price}
-      </div>
+      {/* <div dangerouslySetInnerHTML={{ __html: product.description }}></div> */}
+      <Price>₪{product.price}</Price>
       <img
         style={{ maxHeight: "300px", maxWidth: "300px" }}
         src={`https://cdn.groo.co.il/_media/media/${product.media_cat_id}/${product.media_id}.jpg`}
@@ -36,6 +27,6 @@ export default function Product(props) {
       >
         הוסף לסל
       </button>
-    </div>
+    </ProductWrapper>
   );
 }

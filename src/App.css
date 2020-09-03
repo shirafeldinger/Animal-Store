@@ -11,7 +11,18 @@ a {
   display: inline-block;
   color: grey;
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+@media (min-width: 485px) {
+  .dropdown {
+    padding: 20px;
+  }
+}
+
 .dropdown:hover {
   color: black;
 }
@@ -22,6 +33,14 @@ a {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  margin-top: 250px;
+}
+
+@media (min-width: 485px) {
+  .dropdown-content {
+    margin-right: 250px;
+    margin-bottom: 150px;
+  }
 }
 
 .dropdown-content a {
@@ -41,15 +60,6 @@ a {
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-h6 {
-  color: black;
-}
-
-h6:hover {
-  color: #fc6f38;
-  transition: color 0.3s ease, background-color 0.3s ease;
-}
-
 .nav-btn {
   color: black;
   border-left: 2px solid black;
@@ -59,15 +69,6 @@ h6:hover {
 .nav-btn:hover {
   color: white;
   border-bottom: 2px solid white;
-}
-
-.product {
-  height: 60vh;
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
 }
 
 .form {
@@ -81,10 +82,21 @@ thead {
 }
 
 .list-img {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+@media (min-width: 485px) {
+  .list-img {
+    width: 90px;
+    height: 90px;
+  }
 }
 
-.main-navbar {
-  background-color: rgb(236, 146, 111);
+.innerPage {
+  position: relative;
+}
+
+.App {
+  direction: rtl;
 }

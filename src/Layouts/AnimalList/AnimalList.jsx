@@ -1,52 +1,54 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import styled from "styled-components";
+import AnimalWrapper from "./AnimalWrapper";
+import Dropdown from "./Dropdown";
 export default function AnimalList() {
   return (
-    <div className="navbar ">
-      <Link className="nav-link dropdown" to="#">
+    <AnimalWrapper>
+      <div className="dropdown">
         {" "}
-        כלבים
         <img
           className="list-img"
           src="https://www.petway.co.il/wp-content/uploads/2017/06/dogs.png"
           alt="img"
         />
+        כלבים
         <div className="dropdown-content">
           {" "}
           <Link to="#">אוכל</Link>
           <Link to="#">צעצועים</Link>
           <Link to="#">חומרי הדברה</Link>
         </div>
-      </Link>
-      <Link className="nav-link dropdown" to="#">
-        חתולים
+      </div>
+      <div className="dropdown">
         <img
           className="list-img"
           src="https://www.petway.co.il/wp-content/uploads/2017/06/cats.png"
           alt="img"
         />
+        חתולים
         <div className="dropdown-content">
           {" "}
           <Link to="#">אוכל</Link>
           <Link to="#">צעצועים</Link>
           <Link to="#">חומרי הדברה</Link>
         </div>
-      </Link>
-      <Link className="nav-link dropdown" to="#">
-        תוכים
+      </div>
+      <div className="dropdown">
         <img
           className="list-img"
           src="https://www.petway.co.il/wp-content/uploads/2017/06/perrotds.png"
           alt="img"
         />
+        תוכים
         <div className="dropdown-content">
           {" "}
           <Link to="#">אוכל</Link>
           <Link to="#">צעצועים</Link>
           <Link to="#">חומרי הדברה</Link>
         </div>
-      </Link>
-    </div>
+      </div>
+    </AnimalWrapper>
   );
 }
