@@ -10,6 +10,7 @@ const AnimalWrapper = styled.div`
     top: 50%;
     transform: translateY(-50%);
     flex-direction: column;
+    z-index: 1;
   }
 `;
 export default AnimalWrapper;

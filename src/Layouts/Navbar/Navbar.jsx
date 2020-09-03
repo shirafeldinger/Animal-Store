@@ -4,7 +4,7 @@ import NavbarWrapper from "./NavbarWrapper";
 
 export default function Navbar() {
   return (
-    <NavbarWrapper className="navbar">
+    <NavbarWrapper>
       <Link className="navbar-brand " to="#">
         <img
           style={{ width: "100px", marginLeft: "30px" }}
