@@ -10,6 +10,7 @@ const NavbarWrapper = styled.nav`
     img {
       width: 100px;
       margin-left: 30px;
+      margin: 10px;
     }
   }
 `;

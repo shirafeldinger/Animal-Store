@@ -13,6 +13,7 @@ import Product from "./Components/Product/Product";
 import Categorys from "./Components/Categorys";
 import Cart from "./Components/Cart/Cart";
 import Register from "./Components/Register";
+import Contact from "./Components/Contact";
 
 function App() {
   const [productSelected, setProductSelected] = useState([]);
@@ -35,7 +36,7 @@ function App() {
           <Switch>
             <Route
               exact
-              path="/products"
+              path="/"
               component={() => <Products products={someProducts} />}
             />{" "}
             <Route
@@ -65,7 +66,8 @@ function App() {
                 />
               )}
             />{" "}
-            <Route exact path="/register" component={() => <Register />} />{" "}
+            <Route exact path="/register" component={() => <Register />} />
+            <Route exact path="/contact" component={() => <Contact />} />
           </Switch>
         </div>
       </Router>

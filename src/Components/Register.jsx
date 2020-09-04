@@ -6,26 +6,26 @@ export default function Register() {
       className="d-flex
     flex-column
     justify-content-center
-    align-items-center"
+    align-items-center text-right"
     >
       <div className="form-group">
-        <label>Email address</label>
+        <label>כתובת הדואר האלקטרוני</label>
         <input
           type="email"
           className="form-control"
-          placeholder="Enter email"
+          placeholder="הזן את המייל ,בבקשה"
         />{" "}
       </div>
       <div className="form-group">
-        <label>Password</label>
+        <label>סיסמא</label>
         <input
           type="password"
           className="form-control"
-          placeholder="Password"
+          placeholder="הזן את הסיסמא,בבקשה"
         />
       </div>
       <button type="submit" className="btn btn-primary">
-        Submit
+        התחבר
       </button>
     </form>
   );

@@ -11,7 +11,7 @@ export default function Navbar() {
           alt="shop"
         />
       </Link>{" "}
-      <Link className="nav-btn " to="/products">
+      <Link className="nav-btn " to="/">
         דף הבית
       </Link>{" "}
       <Link className="nav-btn" to="/cart">
@@ -20,7 +20,7 @@ export default function Navbar() {
       <Link className="nav-btn" to="/register">
         התחבר
       </Link>
-      <Link className="nav-btn" to="#">
+      <Link className="nav-btn" to="/contact">
         צור קשר
       </Link>
     </NavbarWrapper>
