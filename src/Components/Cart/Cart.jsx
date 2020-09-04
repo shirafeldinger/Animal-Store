@@ -9,7 +9,7 @@ export default function Cart({ productSelected, handleRemoveProduct }) {
             onClick={() => {
               handleRemoveProduct(index);
             }}
-            className="btn btn-danger m-3"
+            className="btn btn-outline-danger m-3"
           >
             X
           </button>

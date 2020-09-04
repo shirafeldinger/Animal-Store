@@ -6,15 +6,27 @@ const ProductBtn = styled.button`
   top: 40%;
   transform: translateY(-50%);
   transform: translateX(-50%);
-  margin: 10px;
   background-color: #fc6f38;
-  background-img: "https://cdn0.iconfinder.com/data/icons/shopping-cart-26/1000/Shopping-Basket-03-512.png";
-  border: 2px solid #fc6f38;
+  margin: 10px;
+  width: 25wh;
+  height: 10vh;
+  border: none;
   color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
   &:hover {
     background-color: #c96c48;
     border: 2px solid #c96c48;
+  }
+
+  &&& {
+    svg {
+      fill: white;
+      height: 2em;
+      width: 2em;
+    }
   }
 `;
 
