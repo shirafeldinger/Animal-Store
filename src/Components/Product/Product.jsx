@@ -24,8 +24,9 @@ export default function Product(props) {
       {/* <ProductDescriotion
         dangerouslySetInnerHTML={{ __html: product.description }}
       ></ProductDescriotion> */}
+
       <ProductBtn
-        className="btn btn-danger"
+        className="btn-lg"
         onClick={() => {
           props.handleProductSelected(product);
         }}

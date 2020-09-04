@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 const ProductImg = styled.img`
-  max-height: 300px;
-  max-width: 300px;
+  max-height: 180px;
+  max-width: 180px;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
-  margin: 10x;
+  bottom: 30px;
+  right: 0;
+  margin: 10px;
+  @media (min-width: 485px) {
+    max-height: 300px;
+    max-width: 300px;
+  }
 `;
 
 export default ProductImg;

@@ -1,18 +1,18 @@
 import React from "react";
+import Form from "./Form";
 
 export default function Search() {
   return (
     <div className="d-flex align-items-center justify-content-center m-2 ">
-      <form className="d-flex align-items-center w-50 p-4 form-control form">
+      <Form className="form-control ">
         {" "}
         <input
-          style={{ textAlign: "right" }}
-          className="form-control border-0 shadow-none border "
+          className="form-control border-0 shadow-none"
           type="text"
           placeholder="חפש מוצר"
         />
         <button className="btn">חפש</button>
-      </form>
+      </Form>
     </div>
   );
 }

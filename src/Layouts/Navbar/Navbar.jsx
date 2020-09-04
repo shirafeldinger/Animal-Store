@@ -5,23 +5,22 @@ import NavbarWrapper from "./NavbarWrapper";
 export default function Navbar() {
   return (
     <NavbarWrapper>
-      <Link className="navbar-brand " to="#">
+      <Link to="#">
         <img
-          style={{ width: "100px", marginLeft: "30px" }}
           src="https://halfpi.nl/wp-content/uploads/2018/02/shop-icon-300x300.png"
           alt="shop"
         />
       </Link>{" "}
-      <Link className="nav-item nav-link nav-btn " to="/products">
+      <Link className="nav-btn " to="/products">
         דף הבית
       </Link>{" "}
-      <Link className="nav-item nav-link nav-btn" to="/cart">
+      <Link className="nav-btn" to="/cart">
         עגלת קניות
       </Link>{" "}
-      <Link className="nav-item nav-link nav-btn" to="/register">
+      <Link className="nav-btn" to="/register">
         התחבר
       </Link>
-      <Link className="nav-item nav-link nav-btn" to="#">
+      <Link className="nav-btn" to="#">
         צור קשר
       </Link>
     </NavbarWrapper>
