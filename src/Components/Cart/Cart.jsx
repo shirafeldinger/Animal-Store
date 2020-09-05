@@ -1,8 +1,21 @@
 import React from "react";
 import Table from "./Table";
 export default function Cart({ productSelected, handleRemoveProduct }) {
+  const accumalteProducts = (productSelected) => {
+    let objectProducts = productSelected.reduce((acc, product) => {
+      acc[product.title] = acc[product.title] ? acc[product.title] : product;
+      if (acc[product.title].count) {
+        acc[product.title].count++;
+      } else {
+        acc[product.title].count = 1;
+      }
+      return acc;
+    }, {});
+    return Object.values(objectProducts);
+  };
+
   const renderTableData = () => {
-    return productSelected.map((product, index) => (
+    return accumalteProducts(productSelected).map((product, index) => (
       <tr key={product.id}>
         <td>
           <button
@@ -20,7 +33,7 @@ export default function Cart({ productSelected, handleRemoveProduct }) {
             alt="img"
           />
         </td>
-
+        <td> {product.count}×</td>
         <td>₪{product.price}</td>
       </tr>
     ));
@@ -31,7 +44,7 @@ export default function Cart({ productSelected, handleRemoveProduct }) {
       <thead>
         <tr>
           <th>מוצר</th>
-
+          <th>כמות</th>
           <th>מחיר</th>
         </tr>
       </thead>

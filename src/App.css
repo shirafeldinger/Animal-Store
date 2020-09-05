@@ -62,9 +62,9 @@ a {
 }
 
 .nav-btn {
-  color: black;
+  color: #c7562a;
   height: 10vh;
-  border-left: 2px solid black;
+  border-left: 2px solid rgba(0, 0, 0, 0.125);
   transition: color 0.3s ease, background-color 0.3s ease;
   padding: 10px;
   margin: 5px;
@@ -78,8 +78,8 @@ a {
 }
 
 .nav-btn:hover {
-  color: white;
-  border-bottom: 2px solid white;
+  color: #ff723a;
+  border-bottom: 2px solid #ff723a;
 }
 .innerPage {
   position: relative;

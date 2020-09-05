@@ -4,7 +4,6 @@ const NavbarWrapper = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #cf896d;
 
   &&& {
     img {

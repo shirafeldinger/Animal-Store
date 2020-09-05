@@ -18,7 +18,7 @@ export default function Navbar() {
         עגלת קניות
       </Link>{" "}
       <Link className="nav-btn" to="/register">
-        התחבר
+        התחבר/הרשמה
       </Link>
       <Link className="nav-btn" to="/contact">
         צור קשר
