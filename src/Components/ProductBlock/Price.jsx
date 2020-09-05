@@ -5,10 +5,9 @@ const Price = styled.div`
   bottom: 0;
   left: 15px;
   font-weight: 700px;
-  font-size: 2.1714em;
+  font-size: 30px;
   color: #fc6f38;
-  @media (min-width: 485px) {
-    font-size: 2.5714em;
-  }
+  font-weight: bold;
+  margin: 5px;
 `;
 export default Price;
