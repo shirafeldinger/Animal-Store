@@ -13,7 +13,7 @@ export default function Contact() {
         <input className="form-control" type="text" />
       </div>
       <div className="form-group">
-        <label for="exampleFormControlInput1">מייל</label>
+        <label>מייל</label>
         <input type="email" className="form-control" />
       </div>
       <div className="form-group">
@@ -23,7 +23,7 @@ export default function Contact() {
 
       <div class="form-group">
         <label>כתוב את ההודעה</label>
-        <textarea className="form-control" rows="5"></textarea>
+        <textarea className="form-control"></textarea>
       </div>
     </form>
   );

@@ -21,9 +21,9 @@ export default function Product(props) {
 
       <Price>₪{product.price}</Price>
 
-      {/* <ProductDescriotion
+      <ProductDescriotion
         dangerouslySetInnerHTML={{ __html: product.description }}
-      ></ProductDescriotion> */}
+      ></ProductDescriotion>
 
       <ProductBtn
         className="btn"

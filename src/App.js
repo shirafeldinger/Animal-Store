@@ -6,7 +6,7 @@ import Navbar from "./Layouts/Navbar/Navbar";
 import Search from "./Layouts/Search/Search";
 import AnimalList from "./Layouts/AnimalList/AnimalList";
 
-import { someProducts } from "./data/database";
+import { products } from "./data/database";
 import Products from "./Components/Products";
 import "./App.css";
 import Product from "./Components/Product/Product";
@@ -37,13 +37,13 @@ function App() {
             <Route
               exact
               path="/"
-              component={() => <Products products={someProducts} />}
+              component={() => <Products products={products} />}
             />{" "}
             <Route
               exact
               path="/category/:name"
               render={({ match }) => (
-                <Categorys match={match} products={someProducts} />
+                <Categorys match={match} products={products} />
               )}
             />
             <Route
