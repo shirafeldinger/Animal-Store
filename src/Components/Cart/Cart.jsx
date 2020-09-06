@@ -26,7 +26,7 @@ export default function Cart({ productSelected, handleRemoveProduct }) {
           >
             X
           </button>
-          {product.title}
+          {product.title.replace("[MIN_PRICE]", product.price)}
           <img
             style={{ maxHeight: "80px", maxWidth: "80px", margin: "3px" }}
             src={`https://cdn.groo.co.il/_media/media/${product.media_cat_id}/${product.media_id}.jpg`}

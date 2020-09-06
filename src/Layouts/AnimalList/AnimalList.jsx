@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
 import AnimalWrapper from "./AnimalWrapper";
 import ListImg from "./ListImg";
-export default function AnimalList() {
+export default function AnimalList({ findProductsByCategories }) {
   return (
     <AnimalWrapper>
       <div className="dropdown">
@@ -16,11 +15,46 @@ export default function AnimalList() {
         </Link>
         כלבים
         <div className="dropdown-content">
-          <Link to="/category/dogs,food">אוכל</Link>
-          <Link to="/category/dogs,toys">צעצועים</Link>
-          <Link to="/category/dogs,flea&tick">חומרי הדברה</Link>
-          <Link to="/category/dogs,snacks">חטיפים</Link>
-          <Link to="/category/dogs,accessories">אביזרים</Link>
+          <Link
+            onClick={() => {
+              findProductsByCategories();
+            }}
+            to="/category/dogs,food"
+          >
+            אוכל
+          </Link>
+          <Link
+            onClick={() => {
+              findProductsByCategories();
+            }}
+            to="/category/dogs,toys"
+          >
+            צעצועים
+          </Link>
+          <Link
+            onClick={() => {
+              findProductsByCategories();
+            }}
+            to="/category/dogs,flea&tick"
+          >
+            חומרי הדברה
+          </Link>
+          <Link
+            onClick={() => {
+              findProductsByCategories();
+            }}
+            to="/category/dogs,snacks"
+          >
+            חטיפים
+          </Link>
+          <Link
+            onClick={() => {
+              findProductsByCategories();
+            }}
+            to="/category/dogs,accessories"
+          >
+            אביזרים
+          </Link>
         </div>
       </div>
       <div className="dropdown">
@@ -35,10 +69,38 @@ export default function AnimalList() {
         חתולים
         <div className="dropdown-content">
           {" "}
-          <Link to="/category/cats,food">אוכל</Link>
-          <Link to="/category/cats,toys">צעצועים</Link>
-          <Link to="/category/cats,accessories">אביזרים</Link>
-          <Link to="/category/cats,snacks">חטיפים</Link>
+          <Link
+            onClick={() => {
+              findProductsByCategories();
+            }}
+            to="/category/cats,food"
+          >
+            אוכל
+          </Link>
+          <Link
+            onClick={() => {
+              findProductsByCategories();
+            }}
+            to="/category/cats,toys"
+          >
+            צעצועים
+          </Link>
+          <Link
+            onClick={() => {
+              findProductsByCategories();
+            }}
+            to="/category/cats,accessories"
+          >
+            אביזרים
+          </Link>
+          <Link
+            onClick={() => {
+              findProductsByCategories();
+            }}
+            to="/category/cats,snacks"
+          >
+            חטיפים
+          </Link>
         </div>
       </div>
       <div className="dropdown">

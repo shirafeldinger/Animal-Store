@@ -20,6 +20,7 @@ export default function Search({ handleSearch }) {
           onClick={(e) => {
             e.preventDefault();
             handleSearch(search);
+            setSearch(" ");
           }}
         >
           חפש

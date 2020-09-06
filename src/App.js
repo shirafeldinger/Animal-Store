@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Layouts/Navbar/Navbar";
@@ -6,7 +6,7 @@ import AnimalList from "./Layouts/AnimalList/AnimalList";
 import { products } from "./data/database";
 import "./App.css";
 import Product from "./Components/Product/Product";
-import Categorys from "./Components/Categorys";
+import Categorys from "./Components/Categories/Categorys";
 import Cart from "./Components/Cart/Cart";
 import Register from "./Components/Register";
 import Contact from "./Components/Contact";
@@ -22,11 +22,27 @@ function App() {
     let tempProducts = productSelected.filter((product, index) => index !== i);
     setProductSelected([...tempProducts]);
   };
+
+  // useEffect(() => {
+  //   fetch("https://dog.ceo/api/breeds/list/",{
+  //     method:'DELETE',
+  //     body:JSON.stringify(
+  //       "ID": 30,
+
+  //     )
+
+  //   }
+  //   )
+  //     .then((response) => response.json())
+  //     .then((data) => console.log(data))
+  //     .catch((error) => console.error(error));
+  // }, []);
+
   return (
     <div className="App">
       <Router>
         <Navbar />
-        <AnimalList />
+        {/* <AnimalList /> */}
         <div className="innerPage">
           <Switch>
             <Route
