@@ -14,8 +14,8 @@ export default function ProductBlock({ product }) {
           alt="img"
         />
         <Title>{product.title.replace("[MIN_PRICE]", product.price)}</Title>{" "}
+        <Price>₪{product.price}</Price>{" "}
       </Link>
-      <Price>₪{product.price}</Price>
     </ProductBlockWrapper>
   );
 }

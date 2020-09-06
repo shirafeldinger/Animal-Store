@@ -22,13 +22,13 @@ export default function Cart({ productSelected, handleRemoveProduct }) {
             onClick={() => {
               handleRemoveProduct(index);
             }}
-            className="btn btn-outline-danger m-3"
+            className="btn btn-sm btn-outline-danger m-1"
           >
             X
           </button>
           {product.title}
           <img
-            style={{ maxHeight: "100px", maxWidth: "100px", margin: "5px" }}
+            style={{ maxHeight: "80px", maxWidth: "80px", margin: "3px" }}
             src={`https://cdn.groo.co.il/_media/media/${product.media_cat_id}/${product.media_id}.jpg`}
             alt="img"
           />

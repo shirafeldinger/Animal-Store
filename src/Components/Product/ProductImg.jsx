@@ -7,6 +7,11 @@ const ProductImg = styled.img`
   bottom: 15%;
   right: 0;
   margin: 10px;
+  transition: all 1s ease;
+
+  &:hover {
+    transform: scale(1.3);
+  }
   @media (min-width: 485px) {
     max-height: 300px;
     max-width: 300px;

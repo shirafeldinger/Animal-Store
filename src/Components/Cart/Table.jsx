@@ -1,24 +1,24 @@
 import styled from "styled-components";
 
 const table = styled.table`
+  width: 100%;
   &&& {
     th,
     td,
     tr {
-      padding: 15px;
       width: 400px;
       text-align: center;
-      box-sizing: border-box;
+      display: table-cell;
     }
     thead {
       background-color: #fc6f38;
       color: white;
       border-radius: 5px;
+      width: 400px;
     }
     td,
     tr {
       display: flex;
-      justify-content: center;
     }
     td {
       align-items: center;
