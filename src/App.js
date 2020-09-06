@@ -3,11 +3,9 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Navbar from "./Layouts/Navbar/Navbar";
-import Search from "./Layouts/Search/Search";
 import AnimalList from "./Layouts/AnimalList/AnimalList";
 
 import { products } from "./data/database";
-import Products from "./Components/Products";
 import "./App.css";
 import Product from "./Components/Product/Product";
 import Categorys from "./Components/Categorys";
@@ -30,18 +28,17 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <Search />
         <AnimalList />
         <div className="innerPage">
           <Switch>
             <Route
               exact
               path="/"
-              component={() => <Products products={products} />}
+              component={() => <Categorys products={products} />}
             />{" "}
             <Route
               exact
-              path="/category/:name"
+              path="/category/:categories"
               render={({ match }) => (
                 <Categorys match={match} products={products} />
               )}

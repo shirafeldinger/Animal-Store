@@ -1,15 +1,40 @@
 import React from "react";
 import ProductBlock from "./ProductBlock/ProductBlock";
+import Search from "../Layouts/Search/Search";
+
 export default function Categorys({ products, match }) {
-  const category = match.params.name;
-  console.log(category);
+  const handleSearchText = (searchText) => {
+    console.log(searchText);
+  };
+  const findProductsByCategories = () => {
+    let foundProducts = [];
+    products.map((product) => {
+      if (!match) {
+        foundProducts = products;
+      } else {
+        let categories = match.params.categories.split(",");
+        categories.forEach((category) => {
+          if (
+            product.categories.includes(category) &&
+            !foundProducts.includes(product)
+          ) {
+            foundProducts.push(product);
+          }
+        });
+      }
+    });
+    return foundProducts;
+  };
+
+  const foundProducts = findProductsByCategories();
   return (
-    <div className="row d-flex justify-content-center align-items-center">
-      {products.map((product) => {
-        if (product.category == category) {
+    <>
+      <Search handleSearch={(searchText) => handleSearchText(searchText)} />
+      <div className="row d-flex justify-content-center align-items-center">
+        {foundProducts.map((product) => {
           return <ProductBlock key={product.id} product={product} />;
-        }
-      })}
-    </div>
+        })}
+      </div>
+    </>
   );
 }

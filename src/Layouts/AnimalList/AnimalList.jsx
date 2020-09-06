@@ -15,7 +15,6 @@ export default function AnimalList() {
         />
         כלבים
         <div className="dropdown-content">
-          {" "}
           <Link to="/category/dogs,food">אוכל</Link>
           <Link to="/category/dogs,toys">צעצועים</Link>
           <Link to="/category/dogs,flea&tick">חומרי הדברה</Link>
