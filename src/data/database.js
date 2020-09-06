@@ -317,17 +317,6 @@ export const products = [
     media_id: 120983,
   },
   {
-    id: 1006514,
-    title:
-      "מזון מלא ומאוזן לכלבים בוגרים על בסיס עוף ואורז תוצרת איטליה, ב-129 ₪ בלבד. איסוף באחד מ-35 סניפי 'הגרעין'",
-    description:
-      '<ul dir="rtl">\r\n\t<li>\r\n\t<div><span style="font-size:14px"><span style="color:#000000">מזון Dog Club Premium לכלבים בוגרים ב-129 ₪ בלבד (מחיר ל-100 גרם: 86 אגורות בלבד!)</span></span></div>\r\n\t</li>\r\n</ul>\r\n\r\n<div dir="RTL"><br />\r\n<span style="font-size:18px"><span style="color:#000000"><strong>פרטי המוצר</strong></span></span></div>\r\n\r\n<ul dir="rtl">\r\n\t<li>\r\n\t<div><span style="font-size:14px"><span style="color:#000000">מזון לכלבים באיכות <span dir="LTR">PREMIUM</span> </span></span></div>\r\n\t</li>\r\n\t<li>\r\n\t<div><span style="font-size:14px"><span style="color:#000000">בסיס עוף ואורז</span></span></div>\r\n\t</li>\r\n\t<li>\r\n\t<div><span style="font-size:14px"><span style="color:#000000">שילוב ויטמינים ומינרלים לפרווה מבריקה ועור בריא </span></span></div>\r\n\t</li>\r\n\t<li>\r\n\t<div><span style="font-size:14px"><span style="color:#000000">הרכב טעים ומאוזן לשמירה על משקל הכלב</span></span></div>\r\n\t</li>\r\n\t<li>\r\n\t<div><span style="font-size:14px"><span style="color:#000000">משקל 15 ק"ג </span></span></div>\r\n\t</li>\r\n\t<li>\r\n\t<div><span style="font-size:14px"><span style="color:#000000">תוצרת <span dir="LTR">Valpet Group</span> איטליה, יצרנית המזון מהמובילות באירופה </span></span></div>\r\n\t</li>\r\n</ul>\r\n\r\n<div dir="RTL"><span style="font-size:14px"><span style="color:#000000"><strong>רכיבים: </strong><br />\r\nתמצית חלבון עופות (25% בשר עוף)<br />\r\nדגנים (אורז 5%)<br />\r\nשמן ושומנים<br />\r\nציפת עולש 1%<br />\r\nחומרים מינרלים<br />\r\n<br />\r\n<strong>תכולה: </strong></span></span></div>\r\n\r\n<div dir="RTL"><span style="font-size:14px"><span style="color:#000000">חלבון 23%, רטיבות 8%, שומן 10%, תאית 2.8%, אפר 7.5%, זרחן 1%, סידן 1.5%<br />\r\n<br />\r\n<strong>ויטמינים ומינרלים לק"ג: </strong><br />\r\nויטמין <span dir="LTR">A</span> בכמות 12,000<span dir="LTR">UI</span><br />\r\nויטמין <span dir="LTR">D3</span> בכמות 800<span dir="LTR">UI</span><br />\r\nויטמין <span dir="LTR">E</span> בכמות 140<span dir="LTR">mg</span><br />\r\nברזל 61<span dir="LTR">mg</span><br />\r\nאבץ 165<span dir="LTR">mg</span><br />\r\nמנגן 62<span dir="LTR">mg</span><br />\r\nיוד 2.6<span dir="LTR">mg</span><br />\r\nסודיום 0.4<span dir="LTR">mg</span><br />\r\nנוגדי חימצון</span></span></div>\r\n\r\n<div dir="RTL"><br />\r\n<span style="font-size:14px"><span style="color:#000000">חברת הגרעין, מהחלוצות בתחום המזון לכלבים בארץ, בחרה בקפידה בייבוא מזון איכותי, מאוזן וטעים מקטגוריית ה-<span dir="LTR">PREMIUM </span> תוצרת <span dir="LTR">Valpet Group</span>.<br />\r\nקבוצת <span dir="LTR">Valpet Group</span> איטליה, הינה יצרנית מזון פרימיום מהמובילות באירופה. לחברה מפעלים הממוקמים בטורינו, מילנו ובולוניה ומשם משווקת את תוצרתה ללמעלה מ-25 מדינות ברחבי העולם.</span></span></div>\r\n',
-    price: "129",
-    categories: ["dogs", "food"],
-    media_cat_id: 6649,
-    media_id: 256190,
-  },
-  {
     id: 1006531,
     title:
       "מארז הכולל 50 אוזני בקר מיובשות וקריספיות לכלב, ב-129 ₪ בלבד, אפשרות לשני מארזים ב-255 ₪ ",

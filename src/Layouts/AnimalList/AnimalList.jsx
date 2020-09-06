@@ -7,12 +7,13 @@ export default function AnimalList() {
   return (
     <AnimalWrapper>
       <div className="dropdown">
-        {" "}
-        <ListImg
-          className="list-img"
-          src="https://www.petway.co.il/wp-content/uploads/2017/06/dogs.png"
-          alt="img"
-        />
+        <Link to="/category/dogs">
+          <ListImg
+            className="list-img"
+            src="https://www.petway.co.il/wp-content/uploads/2017/06/dogs.png"
+            alt="img"
+          />
+        </Link>
         כלבים
         <div className="dropdown-content">
           <Link to="/category/dogs,food">אוכל</Link>
@@ -23,11 +24,14 @@ export default function AnimalList() {
         </div>
       </div>
       <div className="dropdown">
-        <ListImg
-          className="list-img"
-          src="https://www.petway.co.il/wp-content/uploads/2017/06/cats.png"
-          alt="img"
-        />
+        <Link to="/category/cats">
+          {" "}
+          <ListImg
+            className="list-img"
+            src="https://www.petway.co.il/wp-content/uploads/2017/06/cats.png"
+            alt="img"
+          />
+        </Link>
         חתולים
         <div className="dropdown-content">
           {" "}

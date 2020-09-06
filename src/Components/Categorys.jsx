@@ -6,23 +6,20 @@ export default function Categorys({ products, match }) {
   const handleSearchText = (searchText) => {
     console.log(searchText);
   };
+
   const findProductsByCategories = () => {
     let foundProducts = [];
-    products.map((product) => {
-      if (!match) {
-        foundProducts = products;
-      } else {
-        let categories = match.params.categories.split(",");
-        categories.forEach((category) => {
-          if (
-            product.categories.includes(category) &&
-            !foundProducts.includes(product)
-          ) {
-            foundProducts.push(product);
-          }
-        });
-      }
-    });
+    if (!match) {
+      return products;
+    } else {
+      const categories = match.params.categories.split(",");
+      foundProducts = products.filter((product) => {
+        return categories.every((category) =>
+          product.categories.includes(category)
+        );
+      });
+    }
+
     return foundProducts;
   };
 
@@ -30,6 +27,7 @@ export default function Categorys({ products, match }) {
   return (
     <>
       <Search handleSearch={(searchText) => handleSearchText(searchText)} />
+      <h1>{match.params.categories}</h1>
       <div className="row d-flex justify-content-center align-items-center">
         {foundProducts.map((product) => {
           return <ProductBlock key={product.id} product={product} />;
