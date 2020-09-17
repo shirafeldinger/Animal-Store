@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Layouts/Navbar/Navbar";
@@ -22,21 +22,6 @@ function App() {
     let tempProducts = productSelected.filter((product, index) => index !== i);
     setProductSelected([...tempProducts]);
   };
-
-  // useEffect(() => {
-  //   fetch("https://dog.ceo/api/breeds/list/",{
-  //     method:'DELETE',
-  //     body:JSON.stringify(
-  //       "ID": 30,
-
-  //     )
-
-  //   }
-  //   )
-  //     .then((response) => response.json())
-  //     .then((data) => console.log(data))
-  //     .catch((error) => console.error(error));
-  // }, []);
 
   return (
     <div className="App">
