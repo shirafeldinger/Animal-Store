@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0ce518aca47098173ec1482ab62fa47b",
+    "revision": "6652a54c18330e73659dbf8c9554adaf",
     "url": "/animal-store/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/animal-store/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "85bb8d67fe34279c9050",
+    "revision": "5f9ac82542220aa21ef9",
     "url": "/animal-store/static/css/main.d510b0cc.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/animal-store/static/js/2.3818db1c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "85bb8d67fe34279c9050",
-    "url": "/animal-store/static/js/main.7cb16376.chunk.js"
+    "revision": "5f9ac82542220aa21ef9",
+    "url": "/animal-store/static/js/main.501ad78f.chunk.js"
   },
   {
     "revision": "01a3dcd01f2f5ac4fd91",
