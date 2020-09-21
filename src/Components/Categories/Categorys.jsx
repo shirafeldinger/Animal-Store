@@ -31,7 +31,7 @@ export default function Categorys({ products, match }) {
 
   useEffect(() => {
     findProductsByCategories();
-  }, [match.params]);
+  }, [match]);
 
   return (
     <>
