@@ -31,12 +31,11 @@ export default function Categorys({ products, match }) {
 
   useEffect(() => {
     findProductsByCategories();
-  }, []);
+  }, [match.params]);
 
   return (
     <>
       <Search handleSearch={(searchText) => handleSearchText(searchText)} />
-      <AnimalList findProductsByCategories={findProductsByCategories} />
       <Header>{header}</Header>
 
       <div className="row d-flex justify-content-center align-items-center">
