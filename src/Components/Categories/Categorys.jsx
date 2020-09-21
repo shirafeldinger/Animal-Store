@@ -6,6 +6,7 @@ import AnimalList from "../../Layouts/AnimalList/AnimalList";
 
 export default function Categorys({ products, match }) {
   const [filterdProducts, setFilterdProducst] = useState([]);
+  const [header, setHeader] = useState("");
   const handleSearchText = (searchText) => {
     setFilterdProducst(
       products.filter((product) => product.title.includes(searchText))
@@ -13,18 +14,18 @@ export default function Categorys({ products, match }) {
   };
 
   const findProductsByCategories = () => {
-    let foundProducts = [];
     if (!match) {
       setFilterdProducst(products);
     } else {
       const categories = match.params.categories.split(",");
-      foundProducts = products.filter((product) => {
-        return categories.every((category) =>
-          product.categories.includes(category)
-        );
-      });
-
-      setFilterdProducst(foundProducts);
+      setFilterdProducst(
+        products.filter((product) => {
+          return categories.every((category) =>
+            product.categories.includes(category)
+          );
+        })
+      );
+      setHeader(match.params.categories.replace(",", " "));
     }
   };
 
@@ -36,7 +37,7 @@ export default function Categorys({ products, match }) {
     <>
       <Search handleSearch={(searchText) => handleSearchText(searchText)} />
       <AnimalList findProductsByCategories={findProductsByCategories} />
-      {/* <Header>{match.params.categories}</Header> */}
+      <Header>{header}</Header>
 
       <div className="row d-flex justify-content-center align-items-center">
         {filterdProducts.map((product) => {

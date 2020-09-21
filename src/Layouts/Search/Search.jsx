@@ -11,6 +11,7 @@ export default function Search({ handleSearch }) {
           className="form-control border-0 shadow-none"
           type="text"
           placeholder="חפש מוצר"
+          value={search}
           onChange={(e) => {
             setSearch(e.target.value);
           }}
@@ -20,7 +21,7 @@ export default function Search({ handleSearch }) {
           onClick={(e) => {
             e.preventDefault();
             handleSearch(search);
-            setSearch(" ");
+            setSearch("");
           }}
         >
           חפש

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Layouts/Navbar/Navbar";
-import AnimalList from "./Layouts/AnimalList/AnimalList";
 import { products } from "./data/database";
 import "./App.css";
 import Product from "./Components/Product/Product";
@@ -27,7 +26,6 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        {/* <AnimalList /> */}
         <div className="innerPage">
           <Switch>
             <Route

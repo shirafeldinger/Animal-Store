@@ -21,7 +21,7 @@ export default function Contact() {
         <input className="form-control" type="text" />
       </div>
 
-      <div class="form-group">
+      <div className="form-group">
         <label>כתוב את ההודעה</label>
         <textarea className="form-control"></textarea>
       </div>
