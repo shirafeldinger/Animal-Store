@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Table from "./Table";
+import CartBtn from "./CartBtn";
 export default function Cart({ productSelected, handleRemoveProduct }) {
+  const [message, setMessage] = useState("");
+  const [classMsg, setClassMsg] = useState("");
   const accumalteProducts = (productSelected) => {
     let objectProducts = productSelected.reduce((acc, product) => {
       acc[product.title] = acc[product.title] ? acc[product.title] : product;
@@ -13,6 +16,10 @@ export default function Cart({ productSelected, handleRemoveProduct }) {
     }, {});
     return Object.values(objectProducts);
   };
+
+  const totalCount = productSelected.reduce((total, item) => {
+    return Number(total) + Number(item.price);
+  }, 0);
 
   const renderTableData = () => {
     return accumalteProducts(productSelected).map((product, index) => (
@@ -52,14 +59,23 @@ export default function Cart({ productSelected, handleRemoveProduct }) {
       <tfoot>
         <tr>
           <th>סה"כ</th>
-          <td>
-            ₪
-            {productSelected.reduce((total, item) => {
-              return Number(total) + Number(item.price);
-            }, 0)}
-          </td>
+          <td>₪{totalCount}</td>
         </tr>
       </tfoot>
+      <CartBtn
+        onClick={() => {
+          if (totalCount) {
+            setMessage("רכשת את הפרטים!");
+            setClassMsg("alert alert-success");
+          } else {
+            setMessage("העגלה ריקה");
+            setClassMsg("alert alert-danger");
+          }
+        }}
+      >
+        לרכישה
+      </CartBtn>
+      <p className={classMsg}>{message}</p>
     </Table>
   );
 }
