@@ -69,8 +69,6 @@ a {
 
 .shop-img {
   width: 100px;
-  margin-left: 30px;
-  margin: 10px;
 }
 
 .navbar a {
@@ -99,17 +97,14 @@ a {
     display: none;
   }
   .nav-icon {
-    display: inline-block;
-    align-items: center;
-    justify-content: space-between;
-    width: 30%;
-  }
-
-  .responsive {
     display: flex;
+  }
+  .responsive {
+    display: block;
+    width: 100%;
   }
   .responsive a {
-    display: flex;
+    display: block;
     z-index: 2;
     border: none;
   }
