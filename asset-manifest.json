@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/animal-store/static/css/main.b7e3f2f8.chunk.css",
-    "main.js": "/animal-store/static/js/main.af95c668.chunk.js",
-    "main.js.map": "/animal-store/static/js/main.af95c668.chunk.js.map",
+    "main.js": "/animal-store/static/js/main.17005085.chunk.js",
+    "main.js.map": "/animal-store/static/js/main.17005085.chunk.js.map",
     "runtime-main.js": "/animal-store/static/js/runtime-main.817dde36.js",
     "runtime-main.js.map": "/animal-store/static/js/runtime-main.817dde36.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/animal-store/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.a7d7eedd.chunk.js": "/animal-store/static/js/2.a7d7eedd.chunk.js",
     "static/js/2.a7d7eedd.chunk.js.map": "/animal-store/static/js/2.a7d7eedd.chunk.js.map",
     "index.html": "/animal-store/index.html",
-    "precache-manifest.a41444259e24cc9d3b79565bdca2c808.js": "/animal-store/precache-manifest.a41444259e24cc9d3b79565bdca2c808.js",
+    "precache-manifest.9639c72803ca1c0784903f4db11558c3.js": "/animal-store/precache-manifest.9639c72803ca1c0784903f4db11558c3.js",
     "service-worker.js": "/animal-store/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/animal-store/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.b7e3f2f8.chunk.css.map": "/animal-store/static/css/main.b7e3f2f8.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.a7d7eedd.chunk.js",
     "static/css/main.b7e3f2f8.chunk.css",
-    "static/js/main.af95c668.chunk.js"
+    "static/js/main.17005085.chunk.js"
   ]
 }
