@@ -1,28 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import NavbarWrapper from "./NavbarWrapper";
 
 export default function Navbar() {
+  const [isOpen, setOpen] = useState(false);
   return (
-    <NavbarWrapper>
-      <Link to="#">
+    <nav className={isOpen ? "navbar  responsive" : "navbar"}>
+      {" "}
+      <img
+        className="shop-img"
+        src="https://halfpi.nl/wp-content/uploads/2018/02/shop-icon-300x300.png"
+        alt="shop"
+      />
+      <div>
+        {" "}
         <img
-          src="https://halfpi.nl/wp-content/uploads/2018/02/shop-icon-300x300.png"
-          alt="shop"
+          className="nav-icon"
+          onClick={() => {
+            setOpen(!isOpen);
+          }}
+          src="https://img.icons8.com/ios-filled/50/000000/menu.png"
         />
-      </Link>{" "}
-      <Link className="nav-btn " to="/">
-        דף הבית
-      </Link>{" "}
-      <Link className="nav-btn" to="/cart">
-        עגלת קניות
-      </Link>{" "}
-      <Link className="nav-btn" to="/register">
-        התחבר / הרשמה
-      </Link>
-      <Link className="nav-btn" to="/contact">
-        צור קשר
-      </Link>
-    </NavbarWrapper>
+      </div>
+      <Link to="/">דף הבית</Link> <Link to="/cart">עגלת קניות</Link>
+      <Link to="/register">התחבר / הרשמה</Link>
+      <Link to="/contact">צור קשר</Link>
+    </nav>
   );
 }
