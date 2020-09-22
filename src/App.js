@@ -15,7 +15,19 @@ function App() {
   const [productSelected, setProductSelected] = useState([]);
 
   const handleProductSelected = (newProduct) => {
-    setProductSelected([...productSelected, { ...newProduct }]);
+    // check if product with newProduct.id already exist in productSelected, if so incremante the count by 1,
+    // otherwise add the new product with count = 1
+    const foundIndex = productSelected.findIndex(
+      (product) => product.id === newProduct.id
+    );
+
+    if (foundIndex !== -1) {
+      productSelected[foundIndex].count++;
+      setProductSelected(productSelected);
+    } else {
+      newProduct.count = 1;
+      setProductSelected([...productSelected, { ...newProduct }]);
+    }
   };
 
   const handleRemoveProduct = (i) => {

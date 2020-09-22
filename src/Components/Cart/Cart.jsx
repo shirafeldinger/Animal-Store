@@ -6,25 +6,12 @@ export default function Cart({ productSelected, handleRemoveProduct }) {
   const [message, setMessage] = useState("");
   const [classMsg, setClassMsg] = useState("");
 
-  const accumalteProducts = (productSelected) => {
-    let objectProducts = productSelected.reduce((acc, product) => {
-      acc[product.title] = acc[product.title] ? acc[product.title] : product;
-      if (acc[product.title].count) {
-        acc[product.title].count++;
-      } else {
-        acc[product.title].count = 1;
-      }
-      return acc;
-    }, {});
-    return Object.values(objectProducts);
-  };
-
   const totalCount = productSelected.reduce((total, item) => {
     return Number(total) + Number(item.price);
   }, 0);
 
   const renderTableData = () => {
-    return accumalteProducts(productSelected).map((product, index) => (
+    return productSelected.map((product, index) => (
       <tr key={product.id}>
         <td>
           <button
