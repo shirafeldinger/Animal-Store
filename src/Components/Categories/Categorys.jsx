@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import ProductBlock from "../ProductBlock/ProductBlock";
 import Search from "../../Layouts/Search/Search";
 import Header from "./Header";
-import AnimalList from "../../Layouts/AnimalList/AnimalList";
 
 export default function Categorys({ products, match }) {
   const [filterdProducts, setFilterdProducst] = useState([]);

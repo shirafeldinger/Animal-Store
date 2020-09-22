@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Table from "./Table";
 import CartBtn from "./CartBtn";
+import CartWrapper from "./CartWrapper";
 export default function Cart({ productSelected, handleRemoveProduct }) {
   const [message, setMessage] = useState("");
   const [classMsg, setClassMsg] = useState("");
+
   const accumalteProducts = (productSelected) => {
     let objectProducts = productSelected.reduce((acc, product) => {
       acc[product.title] = acc[product.title] ? acc[product.title] : product;
@@ -47,21 +49,23 @@ export default function Cart({ productSelected, handleRemoveProduct }) {
   };
 
   return (
-    <Table className="table d-flex align-self-center  align-items-center justify-content-center flex-column">
-      <thead>
-        <tr>
-          <th>מוצר</th>
-          <th>כמות</th>
-          <th>מחיר</th>
-        </tr>
-      </thead>
-      <tbody>{renderTableData()}</tbody>
-      <tfoot>
-        <tr>
-          <th>סה"כ</th>
-          <td>₪{totalCount}</td>
-        </tr>
-      </tfoot>
+    <CartWrapper>
+      <Table>
+        <thead>
+          <tr>
+            <th>מוצר</th>
+            <th>כמות</th>
+            <th>מחיר</th>
+          </tr>
+        </thead>
+        <tbody>{renderTableData()}</tbody>
+        <tfoot>
+          <tr>
+            <th>סה"כ</th>
+            <td>₪{totalCount}</td>
+          </tr>
+        </tfoot>
+      </Table>
       <CartBtn
         onClick={() => {
           if (totalCount) {
@@ -76,6 +80,6 @@ export default function Cart({ productSelected, handleRemoveProduct }) {
         לרכישה
       </CartBtn>
       <p className={classMsg}>{message}</p>
-    </Table>
+    </CartWrapper>
   );
 }

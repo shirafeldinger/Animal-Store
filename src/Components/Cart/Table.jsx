@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 const table = styled.table`
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   &&& {
     th,
     td,
     tr {
-      width: 400px;
+      width: 500px;
       text-align: center;
       display: table-cell;
     }
@@ -14,7 +18,7 @@ const table = styled.table`
       background-color: #fc6f38;
       color: white;
       border-radius: 5px;
-      width: 400px;
+      width: 500px;
     }
     td,
     tr {
@@ -22,6 +26,7 @@ const table = styled.table`
     }
     td {
       align-items: center;
+      justify-content: center;
     }
   }
 `;
